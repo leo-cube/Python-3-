@@ -1,0 +1,149 @@
+# Lesson 3:
+# 1. even_numbers: printing even numbers vertically
+even_numbers = []
+for value in range(2,25,2):
+	even_number = value
+	even_numbers.append(even_number)
+	print(even_number)
+ # even_numbers inside a list
+print('\t')
+# 2. even_numbers inside a list:
+even_numbers = []
+for value in range(4,25,4):
+	even_number=value
+	even_numbers.append(even_number)
+print(even_numbers) 
+print('\n')
+# 3. Printing squares in briefly and comprehensively
+squares = []
+for value in range(2,15):
+	square = value ** 2
+	squares.append(square)
+print(squares)
+
+# 4. Min, Max and Sum
+print('\n')
+dig = [4,8,0,1,5,4,3]
+print(max(dig))
+print(min(dig))
+print(sum(dig))
+print(len(dig))
+
+# 5. Comprehension way of writing a code:
+squares = [value**2 for value in range(2,15)] # here square brackets is important in here:
+print(squares)
+
+# 6. SLICING a list;
+colors = ['blue','green','pink','yellow','red','orange']
+print(colors[0:3])
+print(colors[:-1])# after neglecting the -1 it prints the remaining things
+
+# 7. Looping through a slice:
+print('\t ')
+colors = ['blue','green','pink','yellow','red','orange']
+for color in colors[0:4]:
+	print(color.upper())
+# 8. Copying a list[:]
+color = ['blue','green','pink','yellow','red','orange']
+colour_new = ['baneya','june']
+colour_new=color[:]
+print(colour_new)	
+print('\t')
+
+# 9. TUPLE:
+nam = ('hey','wat','yes','tom')
+print(nam[0])
+print(nam[-1])
+print('"Tuple object does not support item assignment - achieved"')
+print('\t')
+
+# 10. Using if and else: SPACES provide a very important role here for what to print and what not to:
+names = ['george','david','clooney','willy']
+for name in names:
+	if name == 'george':
+    	 print('You are free to go ' + name.title())
+	else:
+         print('You are not allowed to leave ' + name.title())
+# 11. Conditional Test: this includes = <= >= == < > and Numericals:
+print('\t')
+age = 21
+print(age == 21)
+print(age <= 21)
+print(age >= 21)
+print(age > 21)
+print(age < 21)
+print(age!= 21)
+	  	 
+	# LESSON-4:
+# 1. Not equals to !=
+color = ['blue','green','pink','yellow','red','orange']
+if color != 'black':
+  print("black is missing")
+
+# 2. and condition :
+print('\t')
+mary = 'george'
+alice = 'kenny'
+print(mary != 'george' and alice == 'kenny') 
+print('\t')
+# or condition: either one can be true and other is false or both true
+print(mary != 'george' or alice == 'kenny') 
+# 3. Finding the value in the list:
+color = ['blue','green','pink','yellow','red','orange']
+print('blue' in color) # nice here the condition turns to be true
+print('pink' not in color) # ok not in has generated false statement
+
+# 4. If statement:
+age = 15
+if age != 15:
+	print("super") # here python does not prints the string inside if condition:
+if age < 15:
+ print('wow') # the age must be 15, lesser than 15 is not valid stuff
+if age >= 15:
+	print("yes this is right") 	# the equals to symbol defines the value 15 to the string so it prints
+
+print('\t')
+# 5. if - else statement:
+age = 23
+if age < 23:
+	print('You cannot date me') # here python is seeing false so it passes on to the next condition checks it and then passes it
+else:
+	print('You can date me')
+	
+side_dishes = ['gotii','chicken','sausage']
+if 'channa' in side_dishes: # coz channa is not in the side_dishes so python passed on to the else condition;
+	print('Bring on')
+else:
+	print('Bring chicken')		
+print('\t')
+
+# 6. if-elif-else:
+side_dishes = ['pizza','pasta','burger','coke','popcorn','beer']
+if 'tomato' in side_dishes:
+	print('no thanks')
+elif 'pizza' in side_dishes: # here the stuff from side_dishes is in here so python stops here and shows the result
+	print('No')
+else: 
+	print('Bring me pasta atleast')		
+print('\t')	 
+	
+# 7. if-elif:
+side_dishes = ['pizza','pasta','burger','coke','popcorn','beer']
+if 'jackberry' in side_dishes:
+	print('no')
+elif 'blueberry' in side_dishes:
+	print('yes')
+elif 'coke' in side_dishes:
+	print('Bring it on baby')	# here there are multiple elif so python stops checking when it found the crect one
+	
+# 8. Only if but multiple if condition:
+side_dishes = ['pizza','pasta','burger','coke','popcorn','beer']
+if 'popcorn' in side_dishes:
+	print('oh yeaa')	
+if 'beer' in side_dishes:
+	print('cool baby')
+if 'ketchup' in side_dishes:
+	print("nah, I'm cool here ") # This one got rejected becoz we have encountered a problem here
+if 'pizza' in side_dishes:
+	print('bring it on baby')					
+
